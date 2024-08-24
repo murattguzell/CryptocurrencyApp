@@ -54,7 +54,7 @@ Kullanım Amacı: Veri modelini tanımlamak için kullanılır. CyriptoModel, kr
 ## Ekran Görüntüleri
 
 |||||
-|------------------|-----------------|
+|------------------|------------------|------------------|------------------|
 | ![Ekran 1](https://github.com/murat-guzel33/myScreenShotFiles/blob/master/CyrptoCurrencyAPP/Ss1.png?raw=true) | ![Ekran 2](https://github.com/murat-guzel33/myScreenShotFiles/blob/master/CyrptoCurrencyAPP/Ss2.png?raw=true)
 
   
