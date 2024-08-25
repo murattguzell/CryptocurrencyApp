@@ -1,60 +1,30 @@
-
 # Cyrpto Currencsy APP
 
-Projenin amacı, bir API'den kripto para birimlerinin güncel verilerini (para birimi ve fiyat bilgisi) çekmek ve bu verileri kullanıcıya dinamik bir liste (RecyclerView) olarak sunmaktır. Proje, Retrofit ile bir API'den veri çekmeyi, bu verileri modellemeyi (data class) ve RecyclerView kullanarak listelemeyi içermektedir. Kullanıcı, listede bulunan kripto para birimlerine tıklayarak belirli etkileşimlerde bulunabilir (örneğin, Toast mesajı ile bilgilendirilir).
+The aim of the project is to get current data (currency and price information) of cryptocurrencies from an API and present this data to the user as a dynamic list (RecyclerView). The project involves getting data from an API with Retrofit, modeling this data (data class) and listing it using RecyclerView. The user can click on the cryptocurrencies in the list and perform certain interactions (for example, receiving notifications with a Toast message).
 
-Bu proje, temel seviyede bir kripto para takip uygulaması olarak düşünülebilir ve API ile veri çekme, listeleme ve kullanıcı etkileşimlerini yönetme gibi konuları içermektedir.
+This project can be considered as a basic cryptocurrency tracking application and includes topics such as getting data with the API, listing it and managing user interactions.
 
+## Features This application provides a platform where users can instantly view the prices of cryptocurrencies. Users can benefit from the following features through the application: - Cryptocurrency List: When the application is opened, you can see the names of different cryptocurrencies and their current prices.
 
-## Özellikler
-Bu uygulama, kullanıcıların anlık olarak kripto para birimlerinin fiyatlarını görüntüleyebileceği bir platform sunar. Kullanıcılar uygulama üzerinden şu özelliklerden faydalanabilirler:
+- Interaction on the List: When you click on any item in the cryptocurrency list, the name of the cryptocurrency you have selected appears on the screen as a short message.
 
-- Kripto Para Listesi: Uygulama açıldığında, farklı kripto para birimlerinin isimlerini ve güncel fiyatlarını görebilirsiniz.
+- Colored List: Each cryptocurrency in the list is shown with a different background color, so that the data can be distinguished more easily.
 
-- Liste Üzerinde Etkileşim: Kripto para listesinde herhangi bir öğeye tıkladığınızda, seçtiğiniz kripto para biriminin ismi ekranda kısa bir mesaj olarak görünür.
+## Technologies Used **Retrofit:** Usage Purpose: Used to manage HTTP requests and retrieve data from the API. In this project, requests are sent to the cryptocurrency API with Retrofit and JSON data is retrieved.
 
-- Renkli Liste: Listede yer alan her kripto para birimi farklı bir arka plan rengi ile gösterilir, bu sayede veriler daha kolay ayırt edilebilir.
+**RxJava:** Usage Purpose: Used to manage asynchronous data flows. Data returned from the API call is processed asynchronously and UI updates are made.
 
+**Gson:** Usage Purpose: Used to convert JSON data to Kotlin data classes. JSON data received with Retrofit is automatically converted to the CyriptoModel data class.
 
-  
-## Kullanılan Teknolojiler
+**RecyclerView:** Usage Purpose: Used to dynamically display data in a list. In this project, cryptocurrency information is listed with RecyclerView.
 
-**Retrofit:**
+**LayoutInflater:** Usage Purpose: Used to convert XML layout files to View objects. In this project, cyripto_row.xml file is inflated as View to create item views.
 
-Kullanım Amacı: HTTP isteklerini yönetmek ve API'den veri almak için kullanılır. Bu projede Retrofit ile kripto para API'sine istek gönderilir ve JSON verileri alınır.
+**Color:** Purpose: Used to dynamically change the background color. Different colors are assigned to different cryptocurrency items.
 
-**RxJava:**
+**CompositeDisposable (RxJava):** Purpose: Used to manage RxJava transactions and cancel them when necessary. Unused resources are released when API requests are completed or errors occur.
 
-Kullanım Amacı: Asenkron veri akışlarını yönetmek için kullanılır. API çağrısından dönen veriler asenkron olarak işlenir ve UI güncellemeleri yapılır.
+**Data Class (Kotlin):** Purpose: Used to define the data model. CyriptoModel is the data class that represents cryptocurrency data (currency and price).
 
-**Gson:**
-
-Kullanım Amacı: JSON verilerini Kotlin veri sınıflarına dönüştürmek için kullanılır. Retrofit ile gelen JSON verileri otomatik olarak CyriptoModel veri sınıfına çevrilir.
-
-**RecyclerView:**
-
-Kullanım Amacı: Dinamik olarak liste halinde veri göstermek için kullanılır. Bu projede kripto para bilgileri RecyclerView ile listelenir.
-
-**LayoutInflater:**
-
-Kullanım Amacı: XML layout dosyalarını View nesnelerine dönüştürmek için kullanılır. Bu projede öğe görünümlerini oluşturmak için cyripto_row.xml dosyası View olarak şişirilir.
-
-**Color:**
-
-Kullanım Amacı: Dinamik olarak arka plan rengini değiştirmek için kullanılır. Farklı kripto para öğelerine farklı renkler atanır.
-
-**CompositeDisposable (RxJava):**
-
-Kullanım Amacı: RxJava işlemlerini yönetmek ve gerektiğinde iptal etmek için kullanılır. API istekleri tamamlandığında veya hata oluştuğunda kullanılmayan kaynaklar serbest bırakılır.
-
-**Data Class (Kotlin):**
-
-Kullanım Amacı: Veri modelini tanımlamak için kullanılır. CyriptoModel, kripto para verilerini (para birimi ve fiyat) temsil eden veri sınıfıdır.
-  
-## Ekran Görüntüleri
-
-|||||
-|------------------|------------------|------------------|------------------|
-| ![Ekran 1](https://github.com/murat-guzel33/myScreenShotFiles/blob/master/CyrptoCurrencyAPP/Ss1.png?raw=true) | ![Ekran 2](https://github.com/murat-guzel33/myScreenShotFiles/blob/master/CyrptoCurrencyAPP/Ss2.png?raw=true)
-
-  
+## Screenshots |||||
+|--------------------|- ... | ![Screen 1](https://github.com/murat-guzel33/myScreenShotFiles/blob/master/CyrptoCurrencyAPP/Ss1.png?raw=true) | ![Screen 2](https://github.com/murat-guzel33/myScreenShotFiles/blob/master/CyrptoCurrencyAPP/Ss2.png?raw=true)
