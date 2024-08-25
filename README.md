@@ -4,13 +4,17 @@ The aim of the project is to get current data (currency and price information) o
 
 This project can be considered as a basic cryptocurrency tracking application and includes topics such as getting data with the API, listing it and managing user interactions.
 
-## Features This application provides a platform where users can instantly view the prices of cryptocurrencies. Users can benefit from the following features through the application: - Cryptocurrency List: When the application is opened, you can see the names of different cryptocurrencies and their current prices.
+## Features
+
+This application provides a platform where users can instantly view the prices of cryptocurrencies. Users can benefit from the following features through the application: - Cryptocurrency List: When the application is opened, you can see the names of different cryptocurrencies and their current prices.
 
 - Interaction on the List: When you click on any item in the cryptocurrency list, the name of the cryptocurrency you have selected appears on the screen as a short message.
 
 - Colored List: Each cryptocurrency in the list is shown with a different background color, so that the data can be distinguished more easily.
 
-## Technologies Used **Retrofit:** Usage Purpose: Used to manage HTTP requests and retrieve data from the API. In this project, requests are sent to the cryptocurrency API with Retrofit and JSON data is retrieved.
+## Technologies Used
+
+**Retrofit:** Usage Purpose: Used to manage HTTP requests and retrieve data from the API. In this project, requests are sent to the cryptocurrency API with Retrofit and JSON data is retrieved.
 
 **RxJava:** Usage Purpose: Used to manage asynchronous data flows. Data returned from the API call is processed asynchronously and UI updates are made.
 
@@ -26,5 +30,8 @@ This project can be considered as a basic cryptocurrency tracking application an
 
 **Data Class (Kotlin):** Purpose: Used to define the data model. CyriptoModel is the data class that represents cryptocurrency data (currency and price).
 
-## Screenshots |||||
-|--------------------|- ... | ![Screen 1](https://github.com/murat-guzel33/myScreenShotFiles/blob/master/CyrptoCurrencyAPP/Ss1.png?raw=true) | ![Screen 2](https://github.com/murat-guzel33/myScreenShotFiles/blob/master/CyrptoCurrencyAPP/Ss2.png?raw=true)
+## Screenshots
+
+|||||
+|------------------|------------------|------------------|------------------|
+| ![Screen 1](https://github.com/murat-guzel33/myScreenShotFiles/blob/master/CyrptoCurrencyAPP/Ss1.png?raw=true) | ![Screen 2](https://github.com/murat-guzel33/myScreenShotFiles/blob/master/CyrptoCurrencyAPP/Ss2.png?raw=true)
